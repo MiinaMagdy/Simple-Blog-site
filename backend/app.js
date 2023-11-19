@@ -1,7 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import User from './routes/user';
-import Blog from "./routes/blog";
+import User from './routes/user.js';
+import Blog from "./routes/blog.js";
 require("dotenv").config();
 
 const app = express();
