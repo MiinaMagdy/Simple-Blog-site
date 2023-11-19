@@ -20,7 +20,7 @@ npm start
 
 ## API Endpoints
 > Base URL: https://blog-app-726n.onrender.com
-#### Users: `api/users/`
+### Users: `api/users/`
 <!-- table -->
 | Method | Endpoint  | Description         | body                  |
 | ------ | --------- | ------------------- | --------------------- |
@@ -28,7 +28,7 @@ npm start
 | POST   | `/signup` | register new user   | name, email, password |
 | POST   | `/login`  | Update a user by id | email, password       |
 
-#### Blogs: `api/blogs/`
+### Blogs: `api/blogs/`
 
 <!-- table -->
 | Method | Endpoint    | Description            | body                                                  |
@@ -41,7 +41,7 @@ npm start
 | GET    | `/user/:id` | Get blogs of a user id |                                                       |
 
 ## Models
-#### User
+### User
 <!-- table -->
 | Field    | Type     | 
 | -------- | -------- | 
@@ -50,7 +50,7 @@ npm start
 | *password | String   |
 | blogs    | ObjectId |
 
-#### Blog
+### Blog
 <!-- table -->
 | Field       | Type     |
 | ----------- | -------- |
