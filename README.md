@@ -5,6 +5,7 @@ This is a simple blog site that allows users to create, read, update and delete 
 * [Installation](#installation)
 * [Usage](#usage)
 * [API Endpoints](#api-endpoints)
+* [Models](#models)
 
 ## Installation
 To install the necessary dependencies, run the following command:
@@ -38,3 +39,24 @@ npm start
 | PUT    | `/update`   | Update a blog by id    | title, description, image (image url), user (user id) |
 | DELETE | `/:id`      | Delete a blog by id    |                                                       |
 | GET    | `/user/:id` | Get blogs of a user id |                                                       |
+
+## Models
+#### User
+<!-- table -->
+| Field    | Type     | 
+| -------- | -------- | 
+| *name     | String   |
+| *email    | String   |
+| *password | String   |
+| blogs    | ObjectId |
+
+#### Blog
+<!-- table -->
+| Field       | Type     |
+| ----------- | -------- |
+| *title       | String   |
+| *description | String   |
+| *image       | String   |
+| *user        | ObjectId |
+
+> Note: * indicates required field
